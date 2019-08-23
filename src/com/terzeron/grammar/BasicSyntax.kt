@@ -2,42 +2,6 @@ package com.terzeron.grammar
 
 import kotlin.text.*
 
-fun main() {
-    println("------ printTest ------")
-    printTest()
-    println("------ varValTest ------")
-    varValTest()
-
-    /*
-    /* nested comment */
-     */
-
-    println("------ stringTemplateTest ------")
-    stringTemplateTest()
-    println("------ conditionalExpressionTest ------")
-    conditionalExpressionTest()
-    println("------ nullCheckTest ------")
-    nullCheckTest()
-    println("------ typeCheckTest ------")
-    typeCheckTest()
-
-    println("------ forloopTest1 ------")
-    forloopTest1()
-    println("------ forloopTest2 ------")
-    forloopTest2()
-    println("------ whileloopTest1 ------")
-    whileloopTest1()
-    println("------ whenTest ------")
-    whenTest()
-
-    println("------ rangeTest1 ------")
-    rangeTest1()
-    println("------ rangeTest2 ------")
-    rangeTest2()
-    println("------ collectionTest ------")
-    collectionTest()
-}
-
 fun sum(a: Int, b: Int): Int {
     return a + b
 }
@@ -98,6 +62,7 @@ fun nullCheckTest() {
             return str.toInt()
         }
     }
+
     val arg1 = "3"
     val arg2 = "2"
     val x = parseInt(arg1)
@@ -171,7 +136,7 @@ fun whenTest() {
 fun rangeTest1() {
     val x = 10
     val y = 9
-    if (x in 1..y+1) {
+    if (x in 1..y + 1) {
         println("fits in range")
     }
 
@@ -205,9 +170,45 @@ fun rangeTest2() {
 fun collectionTest() {
     val fruits = listOf("banana", "avacado", "apple", "kiwi")
     fruits
-        .filter { it.startsWith("a")}
+        .filter { it.startsWith("a") }
         .sortedBy { it }
         .map { it.toUpperCase() }
         .forEach { println(it) }
+}
+
+fun main() {
+    println("------ printTest ------")
+    printTest()
+    println("------ varValTest ------")
+    varValTest()
+
+    /*
+    /* nested comment */
+     */
+
+    println("------ stringTemplateTest ------")
+    stringTemplateTest()
+    println("------ conditionalExpressionTest ------")
+    conditionalExpressionTest()
+    println("------ nullCheckTest ------")
+    nullCheckTest()
+    println("------ typeCheckTest ------")
+    typeCheckTest()
+
+    println("------ forloopTest1 ------")
+    forloopTest1()
+    println("------ forloopTest2 ------")
+    forloopTest2()
+    println("------ whileloopTest1 ------")
+    whileloopTest1()
+    println("------ whenTest ------")
+    whenTest()
+
+    println("------ rangeTest1 ------")
+    rangeTest1()
+    println("------ rangeTest2 ------")
+    rangeTest2()
+    println("------ collectionTest ------")
+    collectionTest()
 }
 

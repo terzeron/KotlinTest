@@ -4,50 +4,6 @@ import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
 
-fun main() {
-    println("------ dtoTest ------")
-    dtoTest()
-    println("------ defaultParameterTest ------")
-    defaultParameterTest()
-    println("------ filterTest ------")
-    filterTest()
-    println("------ elementPresenceTest ------ ")
-    elementPresenceTest()
-    println("------ instanceTest ------")
-    instanceTest()
-    println("------ coellectionTraverseTest ------")
-    collectionTraverseTest()
-    println("------ rangeTest ------")
-    rangeTest()
-    println("------ readonlyTest ------")
-    readonlyTest()
-    println("------ lazyTest ------")
-    lazyTest()
-    println("------ extensionTest ------")
-    extensionTest()
-    println("------ singletonTest ------")
-    singletonTest()
-    println("------ notNullShorthandTest ------")
-    nullHandlingTest()
-    println("------ returnOnWhenTest ------")
-    returnOnWhenTest()
-    println("------ ifExpressionTest ------")
-    ifExpressionTest()
-    println("------ builderStyleMethodTest ------")
-    builderStyleMethodTest()
-    println("------ singleExpressionFunctionTest ------")
-    singleExpressionFunctionTest()
-    println("------ withExpressionTest ------")
-    withExpressionTest()
-    println("------ tryWithResourcesTest ------")
-    tryWithResourcesTest()
-    println("------ nullableBooleanTest ------")
-    nullableBooleanTest()
-    println("------ variableSwapTest ------")
-    variableSwapTest()
-
-}
-
 fun dtoTest() {
     data class Customer(val name: String, val email: String)
     // getter & setter
@@ -240,6 +196,7 @@ fun nullHandlingTest() {
             println("value is not null")
         }
     }
+
     val value = "test data"
     valueTest(value)
 }
@@ -302,10 +259,21 @@ fun singleExpressionFunctionTest() {
 
 fun withExpressionTest() {
     class Turtle {
-        fun penDown() { println("pen down")}
-        fun penUp() { println("pen up") }
-        fun turn(degrees: Double) { println("turn $degrees degree") }
-        fun forward(pixels: Double) { println("forward $pixels pixel") }
+        fun penDown() {
+            println("pen down")
+        }
+
+        fun penUp() {
+            println("pen up")
+        }
+
+        fun turn(degrees: Double) {
+            println("turn $degrees degree")
+        }
+
+        fun forward(pixels: Double) {
+            println("forward $pixels pixel")
+        }
     }
 
     val myTurtle = Turtle()
@@ -322,8 +290,8 @@ fun withExpressionTest() {
 
 fun tryWithResourcesTest() {
     val stream = Files.newInputStream(Paths.get("test.txt"))
-    stream.buffered().reader().use {
-        reader -> println(reader.readText())
+    stream.buffered().reader().use { reader ->
+        println(reader.readText())
     }
 }
 
@@ -335,6 +303,7 @@ fun nullableBooleanTest() {
             "unknown (false or null)"
         }
     }
+
     var b: Boolean? = true
     println(booleanTest(b))
     b = null
@@ -346,6 +315,51 @@ fun nullableBooleanTest() {
 fun variableSwapTest() {
     var a = 1
     var b = 2
-    a = b.also{ b = a }
+    a = b.also { b = a }
     println("a is $a, b is $b")
 }
+
+fun main() {
+    println("------ dtoTest ------")
+    dtoTest()
+    println("------ defaultParameterTest ------")
+    defaultParameterTest()
+    println("------ filterTest ------")
+    filterTest()
+    println("------ elementPresenceTest ------ ")
+    elementPresenceTest()
+    println("------ instanceTest ------")
+    instanceTest()
+    println("------ coellectionTraverseTest ------")
+    collectionTraverseTest()
+    println("------ rangeTest ------")
+    rangeTest()
+    println("------ readonlyTest ------")
+    readonlyTest()
+    println("------ lazyTest ------")
+    lazyTest()
+    println("------ extensionTest ------")
+    extensionTest()
+    println("------ singletonTest ------")
+    singletonTest()
+    println("------ notNullShorthandTest ------")
+    nullHandlingTest()
+    println("------ returnOnWhenTest ------")
+    returnOnWhenTest()
+    println("------ ifExpressionTest ------")
+    ifExpressionTest()
+    println("------ builderStyleMethodTest ------")
+    builderStyleMethodTest()
+    println("------ singleExpressionFunctionTest ------")
+    singleExpressionFunctionTest()
+    println("------ withExpressionTest ------")
+    withExpressionTest()
+    println("------ tryWithResourcesTest ------")
+    tryWithResourcesTest()
+    println("------ nullableBooleanTest ------")
+    nullableBooleanTest()
+    println("------ variableSwapTest ------")
+    variableSwapTest()
+
+}
+
