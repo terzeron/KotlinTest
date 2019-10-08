@@ -171,7 +171,7 @@ object Resource {
 
 fun singletonTest() {
     val r = Resource
-    println(r.name)
+    println(Resource.name)
 }
 
 fun nullHandlingTest() {

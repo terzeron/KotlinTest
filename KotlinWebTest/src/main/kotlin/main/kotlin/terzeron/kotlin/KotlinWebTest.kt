@@ -1,4 +1,4 @@
-package com.terzeron.kotlin
+package main.kotlin.terzeron.kotlin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

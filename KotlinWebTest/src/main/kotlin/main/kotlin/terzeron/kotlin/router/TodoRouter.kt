@@ -1,6 +1,6 @@
-package com.terzeron.kotlin.router
+package main.kotlin.terzeron.kotlin.router
 
-import com.terzeron.kotlin.handler.TodoHandler
+import main.kotlin.terzeron.kotlin.handler.TodoHandler
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.reactive.function.server.RequestPredicates.path

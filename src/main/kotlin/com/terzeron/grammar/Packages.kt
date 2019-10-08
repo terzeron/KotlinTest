@@ -8,5 +8,5 @@ fun main() {
     t.testFunc1()
 
     testFunc2()
-    com.terzeron.test_package1.testFunc2()
+    testFunc2()
 }

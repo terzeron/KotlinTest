@@ -1,4 +1,4 @@
-package com.terzeron.kotlin.domain
+package main.kotlin.terzeron.kotlin.domain
 
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 

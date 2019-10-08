@@ -1,7 +1,7 @@
-package com.terzeron.kotlin.handler
+package main.kotlin.terzeron.kotlin.handler
 
-import com.terzeron.kotlin.domain.Todo
-import com.terzeron.kotlin.domain.TodoRepository
+import main.kotlin.terzeron.kotlin.domain.Todo
+import main.kotlin.terzeron.kotlin.domain.TodoRepository
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.BodyInserters.fromObject
