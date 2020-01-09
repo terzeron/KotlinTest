@@ -1,4 +1,4 @@
-package main.kotlin.com.terzeron.grammar
+package com.terzeron.grammar
 
 fun main() {
     println("hello world")
