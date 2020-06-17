@@ -1,0 +1,4 @@
+rootProject.name = 'KotlinTest'
+include 'KotlinWebTest'
+include 'KotlinGrammarTest'
+
