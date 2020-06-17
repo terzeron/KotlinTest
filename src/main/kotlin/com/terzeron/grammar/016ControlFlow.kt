@@ -44,7 +44,7 @@ fun whenTest1() {
         in 1..10 -> println("x is in the range")
         in validNumbers -> println("x is valid")
         !in 10..20 -> println("x is outside the range")
-        else -> print("unknown")
+        else -> println("unknown")
     }
 }
 
@@ -75,9 +75,39 @@ fun whenTest2() {
     println(hasPrefix("prefixTestString"))
 }
 
+fun forLoopTest1() {
+    val ints = listOf(10, 20, 30, 40, 50)
+    for (item: Int in ints) {
+        println(item)
+    }
+
+    for (i in ints.indices) {
+        println(i)
+    }
+
+    for ((index, value) in ints.withIndex()) {
+        println("$index: $value")
+    }
+}
+
+fun whileLoopTest1() {
+    var x = 5
+    while (x > 0) {
+        println(x)
+        x--
+    }
+
+    do {
+        println(x)
+        x++
+    } while (x < 4)
+}
+
 fun main() {
     ifTest()
     whenTest1()
     whenTest2()
     whenTest3()
+    forLoopTest1()
+    whileLoopTest1()
 }
