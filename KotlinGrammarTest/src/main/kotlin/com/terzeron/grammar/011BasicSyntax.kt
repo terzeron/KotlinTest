@@ -1,4 +1,4 @@
-package com.terzeron.grammar.grammar
+package com.terzeron.grammar
 
 fun sum(a: Int, b: Int): Int {
     return a + b
