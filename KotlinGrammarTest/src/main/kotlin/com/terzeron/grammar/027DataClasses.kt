@@ -6,9 +6,14 @@ fun dataClassTest() {
     }
 
     val person1 = Person("John")
-    val person2 = Person("John")
+    println(person1.age)
     person1.age = 10
+    println(person1.age)
+
+    val person2 = Person("John")
+    println(person2.age)
     person2.age = 20
+    println(person2.age)
 }
 
 fun copyingTest() {

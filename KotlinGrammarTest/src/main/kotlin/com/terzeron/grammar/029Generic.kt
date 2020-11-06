@@ -1,5 +1,7 @@
 package com.terzeron.grammar
 
+import com.google.gson.Gson
+
 fun classWithGenericTest() {
     class Box<T>(t: T) {
         var value = t
@@ -61,9 +63,9 @@ fun typeProjectionTest() {
 
     val ints: Array<Any> = arrayOf(1, 2, 3)
     val any = Array<Any>(3) { "" }
-    println(any)
+    println(Gson().toJson(any))
     copy(ints, any)
-    println(any)
+    println(Gson().toJson(any))
 
     fun fill(dest: Array<in String>, value: String) {}
 }
@@ -99,6 +101,7 @@ fun upperBoundTest() {
             where T : CharSequence, T : Comparable<T> {
         return list.filter { it > threshold }.map { it.toString() }
     }
+
     var list = listOf("ABC", "java world", "foo bar")
     println(copyWhenGreater(list, "icecream"))
 }
