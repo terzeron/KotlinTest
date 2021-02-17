@@ -1,4 +1,4 @@
-package com.terzeron.grammar
+package com.terzeron.grammar.classes_and_objects
 
 fun dataClassTest() {
     data class Person(val name: String) {

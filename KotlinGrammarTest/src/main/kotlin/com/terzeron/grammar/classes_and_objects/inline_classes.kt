@@ -1,4 +1,4 @@
-package com.terzeron.grammar
+package com.terzeron.grammar.classes_and_objects
 
 inline class Name(val s: String) {
     val length: Int

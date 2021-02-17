@@ -1,3 +1,4 @@
+package com.terzeron.grammar.classes_and_objects
 // 클래스 확장
 // MutableList에 대해 .swap()이라는 표현을 통해 메소드를 확장하고 있음
 fun MutableList<Int>.swap1(index1: Int, index2: Int) {

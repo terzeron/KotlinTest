@@ -1,7 +1,5 @@
 package com.terzeron.grammar
 
-import java.lang.IllegalArgumentException
-
 fun simpleTypesTest() {
     val one = 1
     val threeBillion = 3000000000

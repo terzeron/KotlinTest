@@ -1,4 +1,4 @@
-package com.terzeron.grammar
+package com.terzeron.grammar.classes_and_objects
 
 // functional interface or SAM(single abstract method) interface
 // 추상 멤버를 단 하나만 가짐. 다른 구상 멤버들은 가질 수 있음

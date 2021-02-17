@@ -1,4 +1,4 @@
-package com.terzeron.grammar
+package com.terzeron.grammar.classes_and_objects
 
 // 한정된 타입
 // 어떤 의미에서 enum 클래스의 확장이라고 볼 수 있음
