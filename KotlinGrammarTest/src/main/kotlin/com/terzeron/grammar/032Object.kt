@@ -8,6 +8,7 @@ open class A1(x: Int) {
 interface B1 {}
 
 fun objectTest() {
+    // object expression: 상속하진 않지만 간단히 확장해서 사용
     val ab: A1 = object : A1(1), B1 {
         // open class로 선언된 A1의 y 값을 override함
         override val y = 25
@@ -18,6 +19,7 @@ fun objectTest() {
 }
 
 fun foo() {
+    // adhoc object expression
     val adHoc = object {
         var x: Int = 0
         var y: Int = 0
